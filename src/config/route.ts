@@ -7,12 +7,12 @@ const UserDetail = React.lazy(() => import('../pages/user-detail'));
 const routers = [
 	{
 		name: "user-list",
-		path: "social/",
+		path: "/",
 		component: Home,
 	},
 	{
 		name: "user-detail",
-		path: "social/user/:id",
+		path: "/user/:id",
 		component: UserDetail,
 	},
 ];
