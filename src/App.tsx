@@ -5,13 +5,13 @@ import './assets/style/plugin/main.css';
 import './assets/style/styles.scss';
 
 import Routes from './config/route'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { HashRouter  as Router, Route, Link, Switch } from 'react-router-dom'
 import Layout from "@components/layout"
 function App() {
   return (
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/">
           <Switch>
             <Layout>
               {

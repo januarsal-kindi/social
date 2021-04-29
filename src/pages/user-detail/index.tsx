@@ -11,9 +11,9 @@ import {
 import { getUserDetail, getPostByUserId, createPost, getAlbumByUserId,editPost ,deletePost} from "../../store/actions/userDetail";
 import CardUser from "./views/CardUser"
 import Sidebar from "./views/Sidebar"
-import PostList from "./views/PostList"
+import PostList from "./views/posts/PostList"
 import AlbumList from "./views/albums/AlbumList"
-import ModalPostEdit from "./views/PostEdit"
+import ModalPostEdit from "./views/posts/PostEdit"
 import { Post } from '@store/types/post.types';
 function Home() {
     const dispatch = useDispatch();

@@ -1,5 +1,5 @@
 {
-  "name": "edts-tes-1",
+  "name": "social",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://januarsal-kindi.github.io/social",
@@ -88,7 +88,7 @@
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b release-4 -d build",
     "start": " yarn watch:css && dotenv -e .env node scripts/start.js",
     "build": "yarn build:css && dotenv -e .env.production node scripts/build.js",
     "test": "node scripts/test.js",
